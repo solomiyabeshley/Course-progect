@@ -1,0 +1,61 @@
+.header{
+    height: auto;
+    width: 100%;
+    border: 1px solid #333;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.logo{
+   width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify-all;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header_btn_wrap_block{
+    height: 100%;
+    margin-top: 10%;
+}
+.header_btn{
+    height: 70px;
+    width: 170px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.working_hours{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    font-size: 23px;
+}
+.working_hours_img{
+padding-top:10%;
+    margin: 5%;
+}
+.contact_us{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 20px;
+}
+.phone_link,.phone_link:active,.phone_link:hover,.phone_link:checked {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #333;
+    color: #333333;
+}
+.working_hours_icon,.contact_us_icon{
+    height: 30px;
+    width: 30px;
+}
