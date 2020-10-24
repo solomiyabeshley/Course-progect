@@ -1,0 +1,234 @@
+.js .slider-single > div:nth-child(1n+2) {
+    display: none;
+}
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) {
+    display: block;
+}
+
+h3 {
+    color: white;
+    background: #333;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.slider-single h3 {
+    line-height: 10rem;
+}
+
+.slider-nav h3::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+}
+
+.slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide {
+    cursor: pointer;
+}
+
+.slick-slide.is-active h3 {
+    color: #c00;
+    background-color: #ffffff;
+}
+
+.header_typeOfFence {
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #333333;
+}
+
+.fenseDescription {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.text_fenseDescription h4 {
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+}
+
+.text_fenseDescription {
+    width: 30%;
+    height: 15rem;
+    margin-left: 13%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: 1px solid #333;
+    color: white;
+    background-color: #333333;
+}
+
+ol {
+    list-style: none;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.num {
+    height: 40px;
+    width: 80px;
+    font-size: 19px;
+    color: rgb(253, 169, 0);
+}
+
+.ol_fenseDescription {
+    width: 80%;
+    height: 16rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #333;
+}
+
+.metalFenceDescription {
+    width: 30%;
+    height: 15rem;
+}
+
+.metalDetailsFenceDescription {
+    width: 50%;
+    margin-bottom: 5%;
+}
+.metalDetailsFenceDescription li{
+    font-size: 14px;
+}
+.imgDetails_fenseDescription {
+    height: 60%;
+    padding: 15px;
+    margin-top: 2%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+.details_fenseDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider_color_of_Fence h2 {
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.chooseColorOfFence {
+    width: 100%;
+    /*height: 40%;*/
+}
+
+.slider_color_of_Fence {
+    width: 40%;
+    margin-bottom: 7%;
+}
+
+.h3_slider_color_of_Fence {
+    font-size: 10px;
+    color: #333333;
+    background-color: white;
+}
+
+.color_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+}
+
+.columns_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+    border-radius: 100px;
+}
+
+.fenceType_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+}
+
+.colors_and_Сolumns_of_Fence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    height: 5rem;
+    width: 13rem;
+    margin-left: 45%;
+    margin-top: -12%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
+}
+
+.hoverHR {
+    width: 450px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: #333333;
+}
+
+.fenceHeader {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.circleBorderFence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 35%;
+}
+
+.sliderMetalFence h2 {
+    padding: 0;
+    margin-top: -5%;
+    font-size: 16px;
+}
