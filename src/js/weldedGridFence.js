@@ -1,156 +1,135 @@
 import React, {Component} from "react";
-import Slider from "react-slick";
 import "./style/style.css";
-import Img1 from "./img/img1.jpg";
-import Img2 from "./img/ral1014.jpg";
-import Img3 from "./img/ral6005.jpg";
-import Img4 from "./img/ral7024.jpg";
-import Img5 from "./img/ral8019.jpg";
-import Img6 from "./img/ral8017.jpg";
-import Img7 from "./img/jaluzi-stolb1.jpg";
-import Img8 from "./img/jaluzi-stolb2.jpg";
-import Img9 from "./img/jaluzi-stolb3.jpg";
-import Img10 from "./img/jaluzi-stolb4.jpg";
-import Img11 from "./img/jaluzi-stolb5.jpg";
+import Img0002 from "./img/3d.png";
+import Img0003 from "./img/2d.png";
+import Img0004 from "./img/city.png";
+import Img0005 from "./img/img2.jpg";
+import Img0006 from "./img/img3.jpg";
+import Img0007 from "./img/img4.jpg";
+
 export default class WeldedGridFence extends Component {
     render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 200,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            appendDots: dots => (
-                <div
-                    style={{
-                        width: "98%",
-                        backgroundColor: "white",
-                        border: "1px solid black",
-                        padding: "10px"
-                    }}
-                >
-                    <ul style={{margin: "0px"}}> {dots} </ul>
-                </div>
-            ),
-            customPaging: i => (
-                <div
-                    style={{
-                        width: "50px",
-                        fontSize: "20px",
-                        color: "#333",
-                    }}
-                >
-                    {i + 1}
-                </div>
-            )
-        };
         return (
             <div>
                 <div className="col-md-6 no-padding">
                     <div className="glazing_cold">
-                        <h3>Паркани</h3>
+                        <h3>Паркани зі званої сітки</h3>
                         <div className="fenseDescription">
-                            <div className="text_fenseDescription">
+                            <div className="text_fenseDescription welded_text_fenseDescription">
                                 <h4>Технічні характеристики</h4>
-                                <p>Паркан "ЖАЛЮЗІ" виготовлений з якісного металевого
-                                    профілю, що дозволяє застосовувати його в зонах з підвищеною вологістю,
-                                    прибережних зонах. Додаткові ребра жорсткості
-                                    змонтовані на секціях дають можливість встановлення паркану висотою понад
-                                    2м,
-                                    при
-                                    цьому жорсткість панелі зберігається. Паркан жалюзі виготовляється з
-                                    оцинкованого
-                                    металу і забарвлюється полімерним порошковим покриттям або з вже
-                                    пофарбованого
-                                    оцинкованого металу, що дозволяє нам впевнено надавати гарантію на покриття
-                                    10
-                                    років.</p>
-                                <p>Переважно огорожа "ЖАЛЮЗІ" використовується для приватних котеджів, де
-                                    загальний
-                                    екстер'єр території вимагає особливого підходу і дизайнерських рішень. Його
-                                    надійна конструкція і неповторний зовнішній вигляд обов'язково задовільнять
-                                    найвищі вимоги до огорожі і дозволяють вирішити питання із загальним
-                                    зовнішнім
-                                    виглядом Вашої ділянки.</p>
+                                <p><b>Паркани зі зварної сітки</b> з полімерним покриттям набирають усе більшої
+                                    популярності на
+                                    ринку огороджень України. Даний тип огорожі є найбільш збалансованим варіантом по
+                                    співвідношенню ціна/якість. Секції паркану досить міцні, але при цьому дуже легкі,
+                                    що значно скорочує витрати на установку.</p>
+                                <p><b>Секції панельного паркану </b>зі зварної сітки виготовляють з оцинкованого дроту,
+                                    звареної в кожному перетині, вкриті гарячим цинком або порошковою фарбою. Даний вид
+                                    покриття забезпечує надійний захист від впливу навколишнього середовища й гарантує
+                                    термін служби паркану не менше 10 років.</p>
                             </div>
-                            <div className="details_fenseDescription">
-                                <div className="ol_fenseDescription">
-                                    <img src={Img1} alt="" className="imgDetails_fenseDescription"/>
 
-                                    <ol>
-                                        <li><span className="num">1.</span><b>ЗВАРНИЙ МЕТАЛОКАРКАС</b> -
-                                            у заданий розмір,<br/> з труби профільної 40х20мм (оцинкована).
-                                        </li>
-                                        <li><span className="num">2.</span><b>ЛАМЕЛІ ПАРКАНУ ЖАЛЮЗІ</b> -
-                                            прокатаний металопрофіль із <br/> завальцюванням в полімерному
-                                            покритті.
-                                        </li>
-                                        <li><span className="num">3.</span><b>ДОБІРНІ ЕЛЕМЕНТИ</b> -
-                                            комплектуючі секції жалюзі з<br/> оцинкованого листового металу.
-                                        </li>
-                                        <li><span className="num">4.</span><b>МЕТАЛЕВИЙ СТОВП</b> -
-                                            з оцинкованої профільної <br/> труби 80х60мм.
-                                        </li>
-                                    </ol>
-                                </div>
+                            <div className="ol_fenseDescription welded_fenseDescription">
+                                <ul>
+                                    <li><img src={Img0006} alt="" className="imgWeldedFence"/>
+                                        Паркан серії <b>«РУБІЖ» </b>3D - вид паркану зі зварної сітки який
+                                        найбільш
+                                        широко поширений і часто купується. Оптимальне співвідношення технічних
+                                        характеристик і вартості паркану 3D із сітки роблять даний тип огорожі лідером
+                                        продажів. Він підходить як для житлових будинків, так і для промислових або
+                                        загальнодоступних об’єктів. Відмінною особливістю є наявність V-подібних ребер
+                                        жорсткості по всій довжині секцій.
+                                    </li>
+                                    <hr/>
+                                    <li><img src={Img0007} alt="" className="imgWeldedFence"/>
+                                        Паркан серії <b>«КОЛЬЧУГА» </b>- найбільшого поширення набув у випадках
+                                        огородження
+                                        об’єктів із підвищеними вимогами до безпеки. У даному типі огорожі може бути
+                                        використаний дріт збільшеного діаметру, що значно підвищує характеристики
+                                        міцності та впливу механічних пошкоджень. Також, на відміну від серії РУБІЖ, тут
+                                        відсутні V-подібні ребра жорсткості, що робить паркан абсолютно плоским і значно
+                                        ускладнює завдання щодо його подолання ззовні.
+                                    </li>
+                                    <hr/>
+                                    <li><img src={Img0005} alt="" className="imgWeldedFence"/>
+                                        Паркан серії <b>«БАР'ЄР» </b>- типова міська огорожа. Зазвичай виготовляються
+                                        невисокі
+                                        (до 1м). Особливістю даного паркану є наявність верхньої планки безпеки, для
+                                        запобігання випадкового травмування навколишніх людей. Наповненням для даного
+                                        виду огорожі можуть виступати панелі секцій 3Д, парканів Рубіж і парканів
+                                        Бар’єр.ю економії
+                                        коштів і часу), прорахують вартість і назвуть час виготовлення.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div className="colors_and_Сolumns_of_Fence">
-                            <div className="slider_color_of_Fence">
-                                <h2>Найпопулярніші кольори</h2>
-                                <Slider {...settings}>
-                                    <div>
-                                        <h3>Коричневий шоколад:</h3>
-                                        <img src={Img6} alt="" className="color_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Графіт:</h3>
-                                        <img src={Img4} alt="" className="color_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Бежевий:</h3>
-                                        <img src={Img2} alt="" className="color_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Класичний зелений:</h3>
-                                        <img src={Img3} alt="" className="color_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Темно коричневий:</h3>
-                                        <img src={Img5} alt="" className="color_of_Fence"/>
-                                    </div>
-                                </Slider>
-                            </div>
-                            <div className="slider_color_of_Fence">
-                                <h2>Варіанти стовпців</h2>
-                                <Slider {...settings}>
-                                    <div>
-                                        <h3>Стовпці з цегли:</h3>
-                                        <img src={Img7} alt="" className="columns_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Стовпці з блоків:</h3>
-                                        <img src={Img8} alt="" className="columns_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Стовпці з каменю:</h3>
-                                        <img src={Img9} alt="" className="columns_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Стовпці з модулів:</h3>
-                                        <img src={Img10} alt="" className="columns_of_Fence"/>
-                                    </div>
-                                    <div>
-                                        <h3>Металеві стовпці:</h3>
-                                        <img src={Img11} alt="" className="columns_of_Fence"/>
-                                    </div>
-                                </Slider>
-                            </div>
+                        <div className=''>
+
+                            <h3>Технічні характеристики огорожі зі зварної сітки</h3>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th><img src={Img0002} alt=""/> <h3>Зварні паркани серії РУБІЖ 3D</h3></th>
+                                    <th><img src={Img0003} alt=""/><h3>Панельні паркани КОЛЬЧУГА</h3></th>
+                                    <th><img src={Img0004} alt=""/><h3>Міські паркани серії БАР’ЄР</h3></th>
+                                </tr>
+                                </thead>
+                                <thead>
+                                <tr>
+                                    <th>Характеристика</th>
+                                    <th>«РУБІЖ»</th>
+                                    <th>«КОЛЬЧУГА»</th>
+                                    <th>«БАР'ЄР»</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Розмір комірки (bxh), мм</td>
+                                    <td>50х200 і 50х50</td>
+                                    <td>50х200</td>
+                                    <td>50х200</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>Діаметр дроту d/D (D/d/D*), мм</td>
+                                    <td>1500; 2000</td>
+                                    <td>1500; 2000</td>
+                                    <td>1500; 2000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>Діаметр прутка, мм</td>
+                                    <td>3/4; 4/4; 5/5</td>
+                                    <td>5/4/5; 5/5/5; 6/5/6;</td>
+                                    <td>5/4/5; 5/5/5; 6/5/6;</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>Довжина панелі, мм</td>
+                                    <td>2500 і 3000</td>
+                                    <td>2500 і 3000</td>
+                                    <td>2000 і 2500</td>
+                                </tr>
+                                <tr>
+                                    <td>Висота панелі, мм</td>
+                                    <td>620 - 3000</td>
+                                    <td>630 - 3000</td>
+                                    <td>670 - 1270</td>
+                                </tr>
+                                <tr>
+                                    <td>Відмінна особливість</td>
+                                    <td>Наявність поздовжнього ребра жорсткості</td>
+                                    <td>Здвоєний горизонтальний дріт</td>
+                                    <td>Захисна планка у верхній частині паркану</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <button className="button glazing_price_btn text-uppercase popup_calc_btn btn_of_Fence">
-                        Дізнатись варість
-                    </button>
+
                 </div>
             </div>
         );

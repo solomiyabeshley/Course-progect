@@ -26,7 +26,12 @@ export default class AsNavFor extends Component {
     }
 
     render() {
+        function addHeaderStyle() {
+            let fadeInUp=document.getElementsByClassName('fadeInUp')[0];
+            fadeInUp.classList.add(".clickHeaderSlider");
+        }
         return (
+
             <div>
                 <div className="header_typeOfFence">
                     <h2>Металеві паркани й огорожа у Львові та Львівській області</h2>
@@ -36,31 +41,37 @@ export default class AsNavFor extends Component {
                     asNavFor={this.state.nav1}
                     ref={slider => (this.slider2 = slider)}
                     slidesToShow={3}
+                    speed={150}
                     swipeToSlide={true}
                     focusOnSelect={true}>
                     <div>
                         <div className="fenceHeader text-center fenceHeader fadeInUp">
-                            <p className="tree_link hoverHR">Паркан-жалюзі із металевого профіля </p>
+                            <p className="tree_link hoverHR" onClick={addHeaderStyle}>Паркан-жалюзі із металевого профіля </p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="aluminum_link hoverHR">Металевий штахетник(Євроштахетник)</p>
+                            <p className="aluminum_link hoverHR" onClick={addHeaderStyle}>Металевий штахетник(Євроштахетник)</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="plastic_link hoverHR">Металевий паркан Ранчо</p>
+                            <p className="plastic_link hoverHR" onClick={addHeaderStyle}>Металевий паркан Ранчо</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="french_link hoverHR">Паркан зі зварної сітки</p>
+                            <p className="french_link hoverHR" onClick={addHeaderStyle}>Паркан зі зварної сітки</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="rise_link hoverHR">Ворота та хвіртки із металу</p>
+                            <p className="rise_link hoverHR" onClick={addHeaderStyle}>Тимчасова огорожа з металу</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
+                            <p className="rise_link hoverHR" onClick={addHeaderStyle}>Ворота та хвіртки із металу</p>
                         </div>
                     </div>
 
@@ -87,6 +98,9 @@ export default class AsNavFor extends Component {
                     {/*Тимчасове огородження*/}
                     <div>
                    <TemporaryFencing/>
+                    </div>
+                    <div>
+                        <div>Soon...</div>
                     </div>
                 </Slider>
             </div>

@@ -7,7 +7,7 @@
 }
 
 h3 {
-    color: white;
+    color: #ffffff;
     background: #333;
     font-size: 20px;
     position: relative;
@@ -78,11 +78,19 @@ h3 {
     color: white;
     background-color: #333333;
 }
-.rancho_text_fenseDescription{
+
+.temporaryFencingDescription {
+    width: 80%;
+    height: 320px;
+    margin-right: 5%;
+}
+
+.rancho_text_fenseDescription {
     width: 90%;
     height: 320px;
     margin-right: 10%;
 }
+
 ol {
     list-style: none;
     padding: 5px;
@@ -114,14 +122,17 @@ ol {
     width: 50%;
     margin-bottom: 5%;
 }
-.metalDetailsFenceDescription li{
+
+.metalDetailsFenceDescription li {
     font-size: 14px;
 }
+
 .imgDetails_fenseDescription {
     height: 60%;
     padding: 15px;
     margin-top: 2%;
 }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -236,12 +247,14 @@ ol {
     margin-top: -5%;
     font-size: 16px;
 }
-.RanchoFence{
+
+.RanchoFence {
     width: 100%;
     /*display: flex;*/
     /*justify-content: space-evenly;*/
 }
-.rancho_fenseDescription{
+
+.rancho_fenseDescription {
     height: 340px;
     padding: 10px;
     overflow-y: scroll;
@@ -249,17 +262,128 @@ ol {
     flex-direction: row;
     border: 1px solid #333;
 }
-.rancho_fenseDescription img{
+
+.rancho_fenseDescription img {
     height: 150px;
     width: 200px;
     position: sticky;
     float: right;
- }
-.rancho_fenseDescription li{
+}
+
+.rancho_fenseDescription li {
     font-size: 20px;
 }
-.combiRancho{
+
+.combiRancho {
     padding: 5%;
     display: flex;
     justify-content: center;
+}
+
+.temporaryImg {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*float: left;*/
+}
+
+.temporaryImg img:hover {
+    height: 200px;
+    border: none;
+    z-index: 1;
+}
+
+.temporary_fenseDescription {
+    width: 700px;
+    height: 340px;
+    margin-right: 10%;
+    overflow-y: scroll;
+}
+
+.temporary_style {
+    /*font-size: 12px;*/
+    border: none;
+}
+
+.temporaryFenceDescription {
+    display: flex;
+    flex-direction: row;
+}
+.parametersTemporaryFence h2 {
+    height: 40px;
+    width: 50%;
+    margin-left: 15%;
+    text-align: center;
+    color: white;
+    background-color: #333333;
+}
+.parametersTemporaryFence {
+    display: table;
+    width: 100%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.parametersTemporaryFence tr {
+    display: table-row;
+}
+
+.parametersTemporaryFence td {
+    display: table-cell;
+    width: 45%;
+    height: 50px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+tr:hover{
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
+}
+.temporaryBttn{
+    height: 60px;
+    margin-top: 3%;
+}
+.clickHeaderSlider:hover{
+    width: 80px;
+    background-color: chocolate;
+}
+.parametersWeldedGridFence{
+    display: table;
+    width: 80%;
+    padding: 3%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+th img{
+    height: 70px;
+    width: 70px;
+    margin-left: 40%;
+}
+th h3{
+    font-size: 17px;
+    padding: 5px;
+}
+.welded_fenseDescription{
+    overflow-y: scroll;
+}
+.imgWeldedFence{
+    height: 150px;
+    width: 150px;
+    float: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imgWeldedFence:hover{
+    height: 350px;
+    width: 350px;
+}
+.welded_text_fenseDescription{
+    width: 45%;
+    margin-left: 7%;
+    margin-right: 4%;
 }
