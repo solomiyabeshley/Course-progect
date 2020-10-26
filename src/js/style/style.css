@@ -78,7 +78,11 @@ h3 {
     color: white;
     background-color: #333333;
 }
-
+.rancho_text_fenseDescription{
+    width: 90%;
+    height: 320px;
+    margin-right: 10%;
+}
 ol {
     list-style: none;
     padding: 5px;
@@ -231,4 +235,31 @@ ol {
     padding: 0;
     margin-top: -5%;
     font-size: 16px;
+}
+.RanchoFence{
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+}
+.rancho_fenseDescription{
+    height: 340px;
+    padding: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #333;
+}
+.rancho_fenseDescription img{
+    height: 150px;
+    width: 200px;
+    position: sticky;
+    float: right;
+ }
+.rancho_fenseDescription li{
+    font-size: 20px;
+}
+.combiRancho{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
 }
