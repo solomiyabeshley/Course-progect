@@ -18,7 +18,6 @@ import Img18 from "./img/img16.jpg";
 import Img19 from "./img/img17.jpg";
 import Img20 from "./img/img18.jpg";
 
-import sdfdsgfj from "./style/style.css";
 
 export default class GatesWicket extends Component {
     constructor(props) {
