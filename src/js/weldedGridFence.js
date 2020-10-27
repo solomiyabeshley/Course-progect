@@ -62,7 +62,7 @@ export default class WeldedGridFence extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className=''>
+                        <div className='tableWeldedFence'>
 
                             <h3>Технічні характеристики огорожі зі зварної сітки</h3>
                             <table>

@@ -6,7 +6,7 @@ import MetalFence from "./metalFence";
 import RanchoFence from "./ranchoMetalFence";
 import WeldedGridFence from "./weldedGridFence";
 import TemporaryFencing from "./temporaryFencing";
-
+import GatesWicket from "./gatesAndWickets";
 import "./style/style.css";
 export default class AsNavFor extends Component {
 
@@ -40,7 +40,7 @@ export default class AsNavFor extends Component {
                 <Slider
                     asNavFor={this.state.nav1}
                     ref={slider => (this.slider2 = slider)}
-                    slidesToShow={3}
+                    slidesToShow={2}
                     speed={150}
                     swipeToSlide={true}
                     focusOnSelect={true}>
@@ -100,7 +100,7 @@ export default class AsNavFor extends Component {
                    <TemporaryFencing/>
                     </div>
                     <div>
-                        <div>Soon...</div>
+                       <GatesWicket/>
                     </div>
                 </Slider>
             </div>

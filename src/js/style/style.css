@@ -226,7 +226,13 @@ ol {
     text-align: center;
     background-color: #333333;
 }
-
+.GateshoverHR:active{
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
+}
 .fenceHeader {
     font-size: 25px;
     display: flex;
@@ -281,18 +287,24 @@ ol {
 }
 
 .temporaryImg {
-    width: 100%;
-    height: 200px;
+    /*width: 100%;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     /*float: left;*/
 }
 
-.temporaryImg img:hover {
+.addHoverForTemporaryFence {
+    width: 30%;
+    height: 150px;
+
+}
+
+.temporaryImg .addHoverForTemporaryFence:hover {
     height: 200px;
+    width: 40%;
     border: none;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 .temporary_fenseDescription {
@@ -311,6 +323,7 @@ ol {
     display: flex;
     flex-direction: row;
 }
+
 .parametersTemporaryFence h2 {
     height: 40px;
     width: 50%;
@@ -319,6 +332,7 @@ ol {
     color: white;
     background-color: #333333;
 }
+
 .parametersTemporaryFence {
     display: table;
     width: 100%;
@@ -326,6 +340,25 @@ ol {
     border-collapse: separate;
     border-spacing: 5px;
 }
+
+.tableWeldedFence {
+    margin-left: 13%;
+
+}
+
+.tableWeldedFence td {
+    display: table-cell;
+    height: 50px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.tableWeldedFence h3 {
+    width: 50%;
+    margin-left: 20%;
+}
+
 .parametersTemporaryFence tr {
     display: table-row;
 }
@@ -338,19 +371,23 @@ ol {
     padding: 0;
     margin: 0;
 }
-tr:hover{
+
+tr:hover {
     background: rgb(253, 109, 0);
     background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
 }
-.temporaryBttn{
+
+.temporaryBttn {
     height: 60px;
     margin-top: 3%;
 }
-.clickHeaderSlider:hover{
+
+.clickHeaderSlider:hover {
     width: 80px;
     background-color: chocolate;
 }
-.parametersWeldedGridFence{
+
+.parametersWeldedGridFence {
     display: table;
     width: 80%;
     padding: 3%;
@@ -358,19 +395,23 @@ tr:hover{
     border-collapse: separate;
     border-spacing: 5px;
 }
-th img{
+
+th img {
     height: 70px;
     width: 70px;
     margin-left: 40%;
 }
-th h3{
+
+th h3 {
     font-size: 17px;
     padding: 5px;
 }
-.welded_fenseDescription{
+
+.welded_fenseDescription {
     overflow-y: scroll;
 }
-.imgWeldedFence{
+
+.imgWeldedFence {
     height: 150px;
     width: 150px;
     float: right;
@@ -378,12 +419,72 @@ th h3{
     display: flex;
     flex-direction: column;
 }
-.imgWeldedFence:hover{
+
+.imgWeldedFence:hover {
     height: 350px;
     width: 350px;
 }
-.welded_text_fenseDescription{
+
+.welded_text_fenseDescription {
     width: 45%;
     margin-left: 7%;
     margin-right: 4%;
+}
+
+.gatesImgStyle {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1%;
+    padding: 2%;
+    border: 1px solid #333;
+}
+
+.gatesImgStyle img {
+    height: 200px;
+    width: 20%;
+}
+
+.gatesImgStyle .noHoverGatesStyle:hover {
+    height: 300px;
+    width: 30%;
+}
+
+.GatesdescriptionAndInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.gates_fenseDescription {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 10%;
+    overflow-y: scroll;
+}
+
+.swingGates {
+    height: 500px;
+    width: 60%;
+    padding: 1%;
+    margin-left: 20%;
+    border: none;
+}
+.wicketDescription{
+    display: flex;
+   flex-direction: column;
+}
+.noHoverGatesStyle_1{
+margin-left: 20%;
+}
+.text_fenseDescription_GatesStyle{
+    display: flex;
+    flex-direction: row;
+}
+.noHoverGatesStyle_2{
+    width: 50%;
+    margin-left: 10%;
+}
+.sdfdsgfj{
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
 }
