@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import GuaranteesHeader from './guaranteesHeader'
 import * as serviceWorker from './serviceWorker';
 import AsNavFor from  "./js/slider";
 ReactDOM.render(
   <React.StrictMode>
-    <App />,
-      <AsNavFor />
+      <AsNavFor />,
+      <GuaranteesHeader />
   </React.StrictMode>,
   document.getElementById('root')
 );

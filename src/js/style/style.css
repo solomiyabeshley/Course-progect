@@ -40,9 +40,15 @@ h3 {
     background-color: #ffffff;
 }
 
+.slider-types {
+    height: min-content;
+}
+
 .header_typeOfFence {
     width: 100%;
-    margin-bottom: 2%;
+    height: auto;
+    margin: 0;
+    /*margin-bottom: 2%;*/
     display: flex;
     text-align: center;
     justify-content: center;
@@ -226,13 +232,15 @@ ol {
     text-align: center;
     background-color: #333333;
 }
-.GateshoverHR:active{
+
+.GateshoverHR:active {
     width: 450px;
     height: 50px;
     text-align: center;
     background: rgb(253, 109, 0);
     background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
 }
+
 .fenceHeader {
     font-size: 25px;
     display: flex;
@@ -343,12 +351,17 @@ ol {
 
 .tableWeldedFence {
     margin-left: 13%;
+    font-size: 16px;
 
+}
+
+.tableWeldedFence th {
+    height: 50px;
 }
 
 .tableWeldedFence td {
     display: table-cell;
-    height: 50px;
+    height: 30px;
     vertical-align: top;
     padding: 0;
     margin: 0;
@@ -359,13 +372,22 @@ ol {
     margin-left: 20%;
 }
 
+.tableWeldedFence img {
+    height: 50px;
+    width: 50px;
+}
+
+.btn_of_Fence {
+    margin-top: 2%;
+}
+
 .parametersTemporaryFence tr {
     display: table-row;
 }
 
 .parametersTemporaryFence td {
     display: table-cell;
-    width: 45%;
+    width: 35%;
     height: 50px;
     vertical-align: top;
     padding: 0;
@@ -469,18 +491,75 @@ th h3 {
     margin-left: 20%;
     border: none;
 }
-.wicketDescription{
+
+.wicketDescription {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
 }
-.noHoverGatesStyle_1{
-margin-left: 20%;
+
+.noHoverGatesStyle_1 {
+    margin-left: 20%;
 }
-.text_fenseDescription_GatesStyle{
+
+.text_fenseDescription_GatesStyle {
     display: flex;
     flex-direction: row;
 }
-.noHoverGatesStyle_2{
+
+.noHoverGatesStyle_2 {
     width: 50%;
     margin-left: 10%;
+}
+
+/*GuaranteesHeader*/
+.guaranteesHeader {
+    width: 100%;
+    padding-bottom: 1%;
+    background: #ffffff url(../img/marbleFont.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.weGuarantYou_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.rowGuarantees {
+    width: 100%;
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.guarantees_block {
+    height: 210px;
+    width: 30%;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.guarantees_h3 {
+    /*padding: 5%;*/
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+.guarantees_block:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.guarantees_icons {
+    height: 100px;
+    width: 100px;;
 }

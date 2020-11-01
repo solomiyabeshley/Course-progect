@@ -68,7 +68,7 @@ export default class WeldedGridFence extends Component {
                             <table>
                                 <thead>
                                 <tr>
-                                    <th></th>
+                                    <th> </th>
                                     <th><img src={Img0002} alt=""/> <h3>Зварні паркани серії РУБІЖ 3D</h3></th>
                                     <th><img src={Img0003} alt=""/><h3>Панельні паркани КОЛЬЧУГА</h3></th>
                                     <th><img src={Img0004} alt=""/><h3>Міські паркани серії БАР’ЄР</h3></th>
@@ -129,8 +129,10 @@ export default class WeldedGridFence extends Component {
                             </table>
                         </div>
                     </div>
-
                 </div>
+                <button className="button glazing_price_btn text-uppercase popup_calc_btn btn_of_Fence">
+                    Дізнатись варість
+                </button>
             </div>
         );
     }

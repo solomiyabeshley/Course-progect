@@ -6,7 +6,6 @@ import MetalFence from "./metalFence";
 import RanchoFence from "./ranchoMetalFence";
 import WeldedGridFence from "./weldedGridFence";
 import TemporaryFencing from "./temporaryFencing";
-import GatesWicket from "./gatesAndWickets";
 import "./style/style.css";
 export default class AsNavFor extends Component {
 
@@ -32,7 +31,7 @@ export default class AsNavFor extends Component {
         }
         return (
 
-            <div>
+            <div className="slider-types">
                 <div className="header_typeOfFence">
                     <h2>Металеві паркани й огорожа у Львові та Львівській області</h2>
                     <h4>Ми виготовляємо якісні огорожі з металу!</h4>
@@ -69,11 +68,11 @@ export default class AsNavFor extends Component {
                             <p className="rise_link hoverHR" onClick={addHeaderStyle}>Тимчасова огорожа з металу</p>
                         </div>
                     </div>
-                    <div>
-                        <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="rise_link hoverHR" onClick={addHeaderStyle}>Ворота та хвіртки із металу</p>
-                        </div>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <div className="fenceHeader_hr text-center fenceHeader fadeInUp">*/}
+                    {/*        <p className="rise_link hoverHR" onClick={addHeaderStyle}>Ворота та хвіртки із металу</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                 </Slider>
                 <Slider
@@ -99,9 +98,9 @@ export default class AsNavFor extends Component {
                     <div>
                    <TemporaryFencing/>
                     </div>
-                    <div>
-                       <GatesWicket/>
-                    </div>
+                    {/*<div>*/}
+                    {/*   <GatesWicket/>*/}
+                    {/*</div>*/}
                 </Slider>
             </div>
         );
