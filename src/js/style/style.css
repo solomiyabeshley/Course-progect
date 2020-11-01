@@ -563,3 +563,14 @@ th h3 {
     height: 100px;
     width: 100px;;
 }
+
+.gatesH1 {
+    /*width: 40%;*/
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
+}
