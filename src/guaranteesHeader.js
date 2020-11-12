@@ -35,7 +35,7 @@ function GuaranteesHeader() {
                 </div>
                 <div className='guarantees_block'>
                     <img src={Img5} alt="" className='guarantees_icons'/>
-                    <h4 className='guarantees_h3'>Доставка парканів</h4>
+                    <h4 className='guarantees_h3'>Доставку парканів</h4>
                 </div>
                 <div className='guarantees_block'>
                     <img src={Img6} alt="" className='guarantees_icons'/>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="shortcut icon" href="public/img/user.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
+          integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css">
+    <title>Ever Fence</title>
+</head>
+<body>
+<!--  header-->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                <div class="logo_img">
+                    <img src="img/logo-design.jpg" alt="#">
+                </div>
+                <p class="logoTetxItem">Виготовляємо огорожі під замовлення<br/> у Львові та Львівській області</p>
+            </div>
+            <div class="header_btn_wrap">
+                <div class="header_btn_wrap_block">
+                    <button class="btnStyle text-uppercase text-left popup_engineer_btn ">
+                        Увійти
+                    </button>
+                    <a href="/"><button class="mainPageBtn">
+                        Головна
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <form
+            name="authForm"
+            onsubmit="onFormSubmit(event)"
+            oninput="validateForm()"
+            class="card card-body auth-form"
+    >
+        <h3 class=" text-center">Реєстрація</h3>
+
+        <div class="form-group">
+            <label for="user_name">Ім'я:</label>
+            <input
+                    name="firstName"
+                    id="user_name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Elon"
+            />
+            <div class="invalid-feedback">Ваше ім'я введено некоректно!</div>
+        </div>
+
+        <div class="form-group">
+            <label for="user_surname">Прізвище:</label>
+            <input
+                    name="lastName"
+                    id="user_surname"
+                    type="text"
+                    class="form-control"
+                    placeholder="Musk"
+            />
+            <div class="invalid-feedback">Ваше прізвище введено некоректно!</div>
+        </div>
+        <div class="form-group">
+            <label for="user_email">Email</label>
+            <input
+                    name="email"
+                    id="user_email"
+                    type="email"
+                    class="form-control"
+                    placeholder="elonmusk@some.com"
+            />
+            <div class="invalid-feedback">Ваше email введено некоректно!</div>
+        </div>
+        <div class="form-group">
+            <label for="user_password">Пароль:</label>
+            <input
+                    name="password"
+                    id="user_password"
+                    type="password"
+                    class="form-control"
+                    placeholder="********"
+            />
+            <div class="invalid-feedback">
+                Перевірте правильність введеного паролю!
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="user_conf_password">Повторити пароль:</label>
+
+            <input
+                    name="confirmPassword"
+                    id="user_conf_password"
+                    type="password"
+                    class="form-control"
+                    placeholder="********"
+            />
+            <div class="invalid-feedback">Паролі не співпадають</div>
+        </div>
+
+        <button type="submit" class="btnSubmit btn-primary">
+            Зареєструватись
+        </button>
+    </form>
+</main>
+<script src="signup.js"></script>
+</body>
+</html>

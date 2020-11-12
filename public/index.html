@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/drawBorder.css">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
@@ -29,14 +30,15 @@
                 </div>
                 <p>Виготовляємо огорожі під замовлення у Львові та Львівській області</p>
             </div>
-
-            <div class="header_btn_wrap">
-                <div class="header_btn_wrap_block">
-                    <button class="header_btn text-uppercase text-left popup_engineer_btn">
-                        Замовити <br>майстра
-                    </button>
+            <div class="contact_us">
+                <div class="contact_us_wrap">
+                    <p class="phone_number_style">+ 38(064)345-422-33</p>
+                    <a class="phone_link" href="#">
+                        <img src="img/call.png" alt="#" class="contact_us_icon">
+                        Замовити зворотній дзвінок</a>
                 </div>
             </div>
+
 
             <div class="working_hours">
                 <div class="working_hours_img">
@@ -47,15 +49,17 @@
                     <span><b>9:00 - 19:00</b></span>
                 </p>
             </div>
-
-            <div class="contact_us">
-                <div class="contact_us_wrap">
-                    <p class="phone_number_style">+ 38(064)345-422-33</p>
-                    <a class="phone_link" href="#">
-                        <img src="img/call.png" alt="#" class="contact_us_icon">
-                        Замовити зворотній дзвінок</a>
+            <div class="header_btn_wrap">
+                <div class="header_btn_wrap_block">
+                    <button class="btnStyle text-uppercase text-left popup_engineer_btn ">
+                        Увійти
+                    </button>
+                   <a href="signup/signup.html"><button class="headerBtn text-uppercase text-left popup_engineer_btn btn draw-border">
+                        Реєстрація
+                    </button></a>
                 </div>
             </div>
+
         </div>
     </div>
 </header>
@@ -108,7 +112,7 @@
 
             </div>
 
-            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 wow fadeInRight">
+            <div class="wow fadeInRight">
                 <form class="form main_form" action="#">
                     <h2>Записатись на <br><span>безкоштовну</span><br> консультацію майстра</h2>
                     <label>
@@ -119,7 +123,7 @@
                         <input type="text" class="form-control form_input" name="user_phone" required
                                placeholder="Введіть номер телефону">
                     </label>
-                    <button class="text-uppercase btn-block button_h " name="submit" type="submit">Записатись</button>
+                    <button class="text-uppercase btn-block button_h headerBtn btn button-drawing draw-border" name="submit" type="submit">Записатись</button>
                     <p class="form_notice">Ваші дані конфеденційні</p>
                 </form>
             </div>
