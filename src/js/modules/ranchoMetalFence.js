@@ -1,9 +1,26 @@
 import React, {Component} from "react";
-import "./style/style.css";
-import ImgRancho from "./img/rancho_1.jpg";
-import Img001 from "./img/zabor-rancho-kombinirovanie.jpg";
+import "../style/style.css";
+import ImgRancho from "../img/rancho_1.jpg";
+import Img001 from "../img/zabor-rancho-kombinirovanie.jpg";
+import Img12 from "../img/close.png";
 
 export default class RanchoFence extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isModalOpen: false
+        };
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    openModal() {
+        this.setState({isModalOpen: true})
+    }
+
+    closeModal() {
+        this.setState({isModalOpen: false})
+    }
     render() {
         return (
             <div>
@@ -109,9 +126,52 @@ export default class RanchoFence extends Component {
                             <img src={Img001} alt=""/>
                         </div>
                     </div>
-                    <button className="button glazing_price_btn text-uppercase popup_calc_btn btn_of_Fence">
-                        Дізнатись варість
-                    </button>
+                    <div>
+                        <button onClick={this.openModal} className="button btn_of_Fence">Дізнатись варість</button>
+                        <ModalRanchoBlinds isOpen={this.state.isModalOpen} onClose={this.closeModal}/>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+class ModalRanchoBlinds extends React.Component {
+    render() {
+        const {isOpen, onClose} = this.props;
+        return (
+            <div className="modalCalculatingWindow">
+                <div className={isOpen ? 'modal modal--is-open modal__content' : 'modal'}>
+                    <div onClick={onClose} className=""><img src={Img12} className="iconCloseStyle" alt="#"/></div>
+                    <form className="formForCalc">
+                        <h2>Розрахувати вартість:</h2>
+                        <div className="dropDownMenu">
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Ширина(см):</p>
+                                <input type="text" name="width" className="form-control form_input" id="width"
+                                       placeholder="1000" required="Заповніть це поле"/>
+                            </div>
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Висота(см):</p>
+                                <input type="text" name="height" id="height" className="form-control form_input" placeholder="200"
+                                       required="Заповніть це поле"/>
+                            </div>
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Кількість стовпців:</p>
+                                <input type="text" name="columnsCount" className="form-control form_input" id="columnsCount"
+                                       placeholder="2" required="Заповніть це поле"/>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-2 col-12">
+                                <input type="button" name="adress" id="btn"
+                                       className="btn-block btn btn-primary mainPageBtn"
+                                       value="Розрахувати"/>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         );

@@ -86,10 +86,11 @@ html {
     border: none;
 }
 .btnStyle {
-    height: 30%;
-    width: 60%;
-    margin-right: 5%;
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
     color: #333;
+    text-align: center;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     border: 1px solid #333;
@@ -113,13 +114,15 @@ html {
     font-size: 18px;
     text-align: center;
     align-self: center;
+    color: black;
+    font-weight: 400;
 }
 .logo_img img{
     height: 90px;
 }
 .btnSubmit{
     width: 250px;
-    margin-left: 20%;
+    margin-left: 23%;
     padding: 5%;
     font-size: 19px;
     border: none;

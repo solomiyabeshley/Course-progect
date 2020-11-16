@@ -6,7 +6,7 @@ import MetalFence from "./metalFence";
 import RanchoFence from "./ranchoMetalFence";
 import WeldedGridFence from "./weldedGridFence";
 import TemporaryFencing from "./temporaryFencing";
-import "./style/style.css";
+import "../style/style.css";
 export default class AsNavFor extends Component {
 
     constructor(props) {
@@ -45,27 +45,27 @@ export default class AsNavFor extends Component {
                     focusOnSelect={true}>
                     <div>
                         <div className="fenceHeader text-center fenceHeader fadeInUp">
-                            <p className="tree_link hoverHR" onClick={addHeaderStyle}>Паркан-жалюзі із металевого профіля </p>
+                            <p className="tree_link hoverHR marginSlider" onClick={addHeaderStyle}>Паркан-жалюзі із металевого профіля </p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="aluminum_link hoverHR" onClick={addHeaderStyle}>Металевий штахетник(Євроштахетник)</p>
+                            <p className="aluminum_link hoverHR marginSlider" onClick={addHeaderStyle}>Металевий штахетник(Євроштахетник)</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="plastic_link hoverHR" onClick={addHeaderStyle}>Металевий паркан Ранчо</p>
+                            <p className="plastic_link hoverHR marginSlider" onClick={addHeaderStyle}>Металевий паркан Ранчо</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="french_link hoverHR" onClick={addHeaderStyle}>Паркан зі зварної сітки</p>
+                            <p className="french_link hoverHR marginSlider" onClick={addHeaderStyle}>Паркан зі зварної сітки</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="rise_link hoverHR" onClick={addHeaderStyle}>Тимчасова огорожа з металу</p>
+                            <p className="rise_link hoverHR marginSlider" onClick={addHeaderStyle}>Тимчасова огорожа з металу</p>
                         </div>
                     </div>
                     {/*<div>*/}

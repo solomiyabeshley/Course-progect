@@ -27,12 +27,16 @@
             </div>
             <div class="header_btn_wrap">
                 <div class="header_btn_wrap_block">
-                    <a href="signin.html"> <button class="btnStyle">
-                        Увійти
-                    </button></a>
-                    <a href="/"><button class="mainPageBtn">
-                        Головна
-                    </button></a>
+                    <a href="signup.html">
+                        <button class="btnStyle">
+                            Реєстрація
+                        </button>
+                    </a>
+                    <a href="/">
+                        <button class="mainPageBtn">
+                            Головна
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -46,7 +50,7 @@
             oninput="validateForm()"
             class="card card-body auth-form"
     >
-        <h3 class=" text-center">Реєстрація</h3>
+        <h3 class=" text-center">Увійти</h3>
 
         <div class="form-group">
             <label for="user_name">Ім'я:</label>
@@ -72,17 +76,6 @@
             <div class="invalid-feedback">Ваше прізвище введено некоректно!</div>
         </div>
         <div class="form-group">
-            <label for="user_email">Email</label>
-            <input
-                    name="email"
-                    id="user_email"
-                    type="email"
-                    class="form-control"
-                    placeholder="elonmusk@some.com"
-            />
-            <div class="invalid-feedback">Ваше email введено некоректно!</div>
-        </div>
-        <div class="form-group">
             <label for="user_password">Пароль:</label>
             <input
                     name="password"
@@ -95,22 +88,8 @@
                 Перевірте правильність введеного паролю!
             </div>
         </div>
-
-        <div class="form-group">
-            <label for="user_conf_password">Повторити пароль:</label>
-
-            <input
-                    name="confirmPassword"
-                    id="user_conf_password"
-                    type="password"
-                    class="form-control"
-                    placeholder="********"
-            />
-            <div class="invalid-feedback">Паролі не співпадають</div>
-        </div>
-
         <button type="submit" class="btnSubmit btn-primary">
-            Зареєструватись
+            Увійти
         </button>
     </form>
 </main>

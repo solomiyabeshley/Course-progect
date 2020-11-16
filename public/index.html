@@ -51,9 +51,9 @@
             </div>
             <div class="header_btn_wrap">
                 <div class="header_btn_wrap_block">
-                    <button class="btnStyle text-uppercase text-left popup_engineer_btn ">
+                    <a href="signup/signin.html"><button class="btnStyle text-uppercase text-left popup_engineer_btn ">
                         Увійти
-                    </button>
+                    </button></a>
                    <a href="signup/signup.html"><button class="headerBtn text-uppercase text-left popup_engineer_btn btn draw-border">
                         Реєстрація
                     </button></a>
@@ -123,7 +123,7 @@
                         <input type="text" class="form-control form_input" name="user_phone" required
                                placeholder="Введіть номер телефону">
                     </label>
-                    <button class="text-uppercase btn-block button_h headerBtn btn button-drawing draw-border" name="submit" type="submit">Записатись</button>
+                    <button class="text-uppercase btn-block button_h headerBtn btn button-drawing draw-border" data-modal name="submit" >Записатись</button>
                     <p class="form_notice">Ваші дані конфеденційні</p>
                 </form>
             </div>
@@ -131,7 +131,44 @@
     </div>
 </main>
 <div id="root"></div>
+
+
+<div class="guaranteesHeader">
+    <div class='weGuarantYou_text'>
+        <h1>Ми гарантуємо вам</h1>
+    </div>
+    <div class="rowGuarantees">
+        <div class='guarantees_block'>
+            <img src='img/guarantees/quality.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Високу якість</h4>
+        </div>
+        <div class='guarantees_block'>
+            <img src='img/guarantees/client.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Професійну консультацію</h4>
+        </div>
+        <div class='guarantees_block'>
+            <img src='img/guarantees/budget.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Розрахунок вартості паркану</h4>
+        </div>
+        <div class='guarantees_block'>
+            <img src='img/guarantees/sketch.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Проектування огорожі</h4>
+        </div>
+        <div class='guarantees_block'>
+            <img src='img/guarantees/shipped.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Доставку парканів</h4>
+        </div>
+        <div class='guarantees_block'>
+            <img src='img/guarantees/wrench.png' alt="" class='guarantees_icons'/>
+            <h4 class='guarantees_h3'>Монтаж огорожі</h4>
+        </div>
+    </div>
+</div>
+<div id="root1"></div>
+<div id="app"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./src/index.js"></script>
+<script src="./src/js/modal/modal.js"></script>
+<script src="./src/js/modal/forms.js"></script>
 </body>
 </html>

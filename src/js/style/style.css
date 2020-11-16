@@ -1,3 +1,6 @@
+/*html{*/
+/*    font-family: 'Source Sans Pro', sans-serif;*/
+/*}*/
 .js .slider-single > div:nth-child(1n+2) {
     display: none;
 }
@@ -69,7 +72,8 @@ h3 {
     background-color: white;
     text-transform: uppercase;
     text-align: center;
-    color: #333333;
+    color: white;
+    background-color: #333;
 }
 
 .text_fenseDescription {
@@ -81,8 +85,8 @@ h3 {
     flex-direction: column;
     overflow-y: scroll;
     border: 1px solid #333;
-    color: white;
-    background-color: #333333;
+    color: black;
+    background-color: white;
 }
 
 .temporaryFencingDescription {
@@ -232,7 +236,9 @@ ol {
     text-align: center;
     background-color: #333333;
 }
-
+.marginSlider{
+    margin-left: 20%;
+}
 .GateshoverHR:active {
     width: 450px;
     height: 50px;
@@ -485,13 +491,16 @@ th h3 {
 }
 
 .swingGates {
-    height: 500px;
-    width: 60%;
+    height: 300px;
+    width: 40%;
     padding: 1%;
     margin-left: 20%;
     border: none;
 }
-
+.swingGates:hover{
+    height: 700px;
+    width: 70%;
+}
 .wicketDescription {
     display: flex;
     flex-direction: column;
@@ -513,6 +522,7 @@ th h3 {
 
 /*GuaranteesHeader*/
 .guaranteesHeader {
+    margin-top: 2%;
     width: 100%;
     padding-bottom: 1%;
     background: #ffffff url(../img/marbleFont.png) 0 0 no-repeat;
@@ -574,3 +584,115 @@ th h3 {
     background: rgb(253, 109, 0);
     background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
 }
+/**/
+/**/
+/**/
+.modalCalculatingWindow{
+   max-height: 500px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 15%;
+}
+
+.modal.modal--is-open {
+    height: 90%;
+    width: 70%;
+    padding: 15px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: rgba(57, 57, 57, 0.1);
+    background-image: url("../img/calcIcon/3459071.jpg");
+    background-size: cover;
+}
+
+.modal__content {
+    position: relative;
+    padding: 20px;
+    background-color: #810d0d;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow-y: hidden;
+}
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.modalWindowStyle{
+    height: 500px;
+    width: 100%;
+}
+.iconCloseStyle{
+    margin-left: 98%;
+    padding: 0;
+    height: 15px;
+    width: 15px;
+
+}
+.mainPageBtn {
+    height: 50px;
+    width: 170px;
+    margin-top: 10%;
+    padding: 5%;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #333;
+    border: none;
+}
+.formForCalc{
+   height: 500px;
+}
+/**/
+/**/
+/**/
+.dropDownMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-control{
+border: 2px solid black;
+}
+select{
+    font-size: 18px;
+}
+.calcIconStyle{
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+.badge{
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+}
+.selectOptionStl{
+    width: max-content;
+    padding: 10px;
+}
+/*.gatesBtnModalStl{*/
+/*    margin-top: -170px;*/
+/*}*/

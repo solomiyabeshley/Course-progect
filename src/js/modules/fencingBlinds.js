@@ -1,18 +1,38 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import "./style/style.css";
-import Img1 from "./img/img1.jpg";
-import Img2 from "./img/ral1014.jpg";
-import Img3 from "./img/ral6005.jpg";
-import Img4 from "./img/ral7024.jpg";
-import Img5 from "./img/ral8019.jpg";
-import Img6 from "./img/ral8017.jpg";
-import Img7 from "./img/jaluzi-stolb1.jpg";
-import Img8 from "./img/jaluzi-stolb2.jpg";
-import Img9 from "./img/jaluzi-stolb3.jpg";
-import Img10 from "./img/jaluzi-stolb4.jpg";
-import Img11 from "./img/jaluzi-stolb5.jpg";
+import "../style/style.css";
+import Img1 from "../img/img1.jpg";
+import Img2 from "../img/ral1014.jpg";
+import Img3 from "../img/ral6005.jpg";
+import Img4 from "../img/ral7024.jpg";
+import Img5 from "../img/ral8019.jpg";
+import Img6 from "../img/ral8017.jpg";
+import Img7 from "../img/jaluzi-stolb1.jpg";
+import Img8 from "../img/jaluzi-stolb2.jpg";
+import Img9 from "../img/jaluzi-stolb3.jpg";
+import Img10 from "../img/jaluzi-stolb4.jpg";
+import Img11 from "../img/jaluzi-stolb5.jpg";
+import Img12 from "../img/close.png";
+
+
 export default class FencingBlinds extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isModalOpen: false
+        };
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    openModal() {
+        this.setState({isModalOpen: true})
+    }
+
+    closeModal() {
+        this.setState({isModalOpen: false})
+    }
+
     render() {
         const settings = {
             dots: true,
@@ -148,11 +168,79 @@ export default class FencingBlinds extends Component {
                             </div>
                         </div>
                     </div>
-                    <button className="button glazing_price_btn text-uppercase popup_calc_btn btn_of_Fence">
-                        Дізнатись варість
-                    </button>
+                    <div>
+                        <button onClick={this.openModal} className="button btn_of_Fence">Дізнатись варість</button>
+                        <Modal isOpen={this.state.isModalOpen} onClose={this.closeModal}/>
+                    </div>
                 </div>
             </div>
         );
     }
 }
+class Modal extends React.Component {
+    render() {
+        const {isOpen, onClose} = this.props;
+        return (
+            <div className="modalCalculatingWindow">
+                <div className={isOpen ? 'modal modal--is-open modal__content' : 'modal'}>
+                    <div onClick={onClose} className=""><img src={Img12} className="iconCloseStyle" alt="#"/></div>
+                    <form className="formForCalc">
+                        <h2>Розрахувати вартість:</h2>
+                        <div className="dropDownMenu">
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Ширина(см):</p>
+                                <input type="text" name="width" className="form-control form_input" id="width"
+                                       placeholder="1000" required="Заповніть це поле"/>
+                            </div>
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Висота(см):</p>
+                                <input type="text" name="height" id="height" className="form-control form_input" placeholder="200"
+                                       required="Заповніть це поле"/>
+                            </div>
+                        <div className="form-group">
+                            <p className="badge badge-warning">
+                                Кількість стовпців:</p>
+                            <input type="text" name="columnsCount" className="form-control form_input" id="columnsCount"
+                                   placeholder="2" required="Заповніть це поле"/>
+                        </div>
+                        </div>
+                        <div>
+                            <div className="dropDownMenu">
+                            <div className="dropdownChooseColor">
+                                    <label className="badge">
+                                        Виберіть колір:</label>
+                                    <select id="fencingBlindsColor-dropdown" name="dropdown" className=" form_input selectOptionStl form-control">
+                                        <option value="chocolate">Коричневий шоколад</option>
+                                        <option value="beige">Бежевий</option>
+                                        <option value="classicGreen">Класичний зелений</option>
+                                        <option value="darkBrown">Темно коричневий</option>
+                                    </select>
+                            </div>
+                            <div className="dropdownChooseColumn">
+                                    <label className="badge">
+                                        Виберіть тип стовпця:</label>
+                                    <select id="fencingBlindsColor-dropdown" name="dropdown" className=" form_input selectOptionStl form-control">
+                                        <option value="brickcolumns">Стовпці з цегли</option>
+                                        <option value="blocksColumn">Стовпці з блоків</option>
+                                        <option value="modulesColumns">Стовпці з модулів</option>
+                                        <option value="metalColumns">Металеві стовпці</option>
+                                    </select>
+                            </div>
+                            </div>
+                        </div>
+                            <div className="row">
+                                <div className="col-md-2 col-12">
+                                    <input type="button" name="adress" id="btn"
+                                           className="btn-block btn btn-primary mainPageBtn"
+                                           value="Розрахувати"/>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+    );
+    }
+    }
+

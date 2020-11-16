@@ -1,5 +1,5 @@
 import React from 'react';
-import "./js/slider";
+import "./js/modules/slider";
 import '../src/js/style/style.css'
 //img
 import Img1 from '../src/js/img/guarantees/quality.png'

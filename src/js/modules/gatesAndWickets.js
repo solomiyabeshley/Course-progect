@@ -1,22 +1,22 @@
 import React, {Component} from "react";
 
-import "./style/style.css";
+import "../style/style.css";
 import Slider from "react-slick";
-import Img05 from "./img/img5.jpg";
-import Img06 from "./img/img6.jpg";
-import Img07 from "./img/img7.jpg";
-import Img08 from "./img/img8.jpg";
-import Img09 from "./img/gatesImg/parkan2-1024x635.png";
-import Img10 from "./img/2628759.webp";
-import Img11 from "./img/img9.webp";
-import Img12 from "./img/img10.webp";
-import Img13 from "./img/img11.jpg";
-import Img15 from "./img/img13.jpg";
-import Img16 from "./img/img14.jpg";
-import Img17 from "./img/img15.jpg";
-import Img18 from "./img/img16.jpg";
-import Img19 from "./img/img17.jpg";
-import Img20 from "./img/img18.jpg";
+import Img05 from "../img/img5.jpg";
+import Img06 from "../img/img6.jpg";
+import Img07 from "../img/img7.jpg";
+import Img08 from "../img/img8.jpg";
+import Img09 from "../img/gatesImg/parkan2-1024x635.png";
+import Img10 from "../img/2628759.webp";
+import Img11 from "../img/img9.webp";
+import Img12 from "../img/img10.webp";
+import Img13 from "../img/img11.jpg";
+import Img15 from "../img/img13.jpg";
+import Img16 from "../img/img14.jpg";
+import Img17 from "../img/img15.jpg";
+import Img19 from "../img/img17.jpg";
+import Img20 from "../img/img18.jpg";
+import Img21 from "../img/close.png";
 
 
 export default class GatesWicket extends Component {
@@ -24,8 +24,11 @@ export default class GatesWicket extends Component {
         super(props);
         this.state = {
             nav1: null,
-            nav2: null
+            nav2: null,
+            isModalOpen: false
         };
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
     componentDidMount() {
         this.setState({
@@ -33,7 +36,13 @@ export default class GatesWicket extends Component {
             nav2: this.slider2
         });
     }
+    openModal() {
+        this.setState({isModalOpen: true})
+    }
 
+    closeModal() {
+        this.setState({isModalOpen: false})
+    }
     render() {
         let gatesImgStyle = document.getElementsByClassName("gatesImgStyle")[0];
 
@@ -52,22 +61,22 @@ export default class GatesWicket extends Component {
                     focusOnSelect={true}>
                     <div>
                         <div className="fenceHeader text-center fenceHeader fadeInUp">
-                            <p className="tree_link GateshoverHR hoverHR">ВІДКАТНІ ВОРОТА</p>
+                            <p className="tree_link GateshoverHR hoverHR marginSlider">ВІДКАТНІ ВОРОТА</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="aluminum_link GateshoverHR hoverHR">РОЗПАШНІ ВОРОТА</p>
+                            <p className="aluminum_link GateshoverHR hoverHR marginSlider">РОЗПАШНІ ВОРОТА</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="plastic_link GateshoverHR hoverHR">МЕТАЛЕВІ ХВІРТКИ</p>
+                            <p className="plastic_link GateshoverHR hoverHR marginSlider">МЕТАЛЕВІ ХВІРТКИ</p>
                         </div>
                     </div>
                     <div>
                         <div className="fenceHeader_hr text-center fenceHeader fadeInUp">
-                            <p className="french_link GateshoverHR hoverHR">АВТОМАТИЧНІ ВОРОТА</p>
+                            <p className="french_link GateshoverHR hoverHR marginSlider">АВТОМАТИЧНІ ВОРОТА</p>
                         </div>
                     </div>
                 </Slider>
@@ -341,6 +350,60 @@ export default class GatesWicket extends Component {
                         </div>
                     </div>
                 </Slider>
+                <div className="gatesBtnModalStl">
+                    <button onClick={this.openModal} className="button btn_of_Fence">Дізнатись варість</button>
+                    <ModalGates isOpen={this.state.isModalOpen} onClose={this.closeModal}/>
+                </div>
+            </div>
+        );
+    }
+}
+class ModalGates extends React.Component {
+    render() {
+        const {isOpen, onClose} = this.props;
+        return (
+            <div className="modalCalculatingWindow">
+                <div className={isOpen ? 'modal modal--is-open modal__content' : 'modal'}>
+                    <div onClick={onClose} className=""><img src={Img21} className="iconCloseStyle" alt="#"/></div>
+                    <form className="formForCalc">
+                        <h2>Розрахувати вартість:</h2>
+                        <div className="dropDownMenu">
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Ширина(см):</p>
+                                <input type="text" name="width" className="form-control form_input" id="width"
+                                       placeholder="1000" required="Заповніть це поле"/>
+                            </div>
+                            <div className="form-group">
+                                <p className="badge badge-warning">
+                                    Висота(см):</p>
+                                <input type="text" name="height" id="height" className="form-control form_input" placeholder="200"
+                                       required="Заповніть це поле"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="dropDownMenu">
+                                <div className="dropdownChooseColor">
+                                    <label className="badge">
+                                        Виберіть тип хвіртки/воріт:</label>
+                                    <select id="fencingBlindsColor-dropdown" name="dropdown" className=" form_input selectOptionStl form-control">
+                                        <option value="chocolate">Розпашні ворота</option>
+                                        <option value="beige">Відкатні ворота</option>
+                                        <option value="classicGreen">Металеві хвірки</option>
+                                        <option value="classicGreen">Автоматичні ворота</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-2 col-12">
+                                <input type="button" name="adress" id="btn"
+                                       className="btn-block btn btn-primary mainPageBtn"
+                                       value="Розрахувати"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }
