@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content_Type" content="text/html; charset=utf-8"/>
+    <title> Fence Price Calculator </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<header class="header calcHeaderDesign">
+    <div class="container">
+        <div class="row">
+
+            <div class="logo calcHeaderDesignLogo">
+                <div class="logo_img">
+                    <img src="img/logo-design.jpg" alt="#" class="calcHeaderDesignLogo">
+                </div>
+            </div>
+            <div class="contact_us">
+                <div class="contact_us_wrap calcDesignCallBack">
+                    <p class="phone_number_style">+ 38(064)345-422-33</p>
+                    <a class="phone_link calcHeaderDesign-phone_link" href="#">
+                        <img src="img/call.png" alt="#" class="contact_us_icon">
+                        Замовити зворотній дзвінок</a>
+                </div>
+            </div>
+            <div class="working_hours">
+                <div class="working_hours_img">
+                    <img src="img/wall-clock.png" alt="#" class="working_hours_icon">
+                </div>
+                <p>Робочі дні:<br>
+                    Пн-Сб<br>
+                    <span><b>9:00 - 19:00</b></span>
+                </p>
+            </div>
+            <div class="header_btn_wrap">
+                <div class="header_btn_wrap_block">
+                    <a href="/"><button class="mainPageBtn">
+                        Головна
+                    </button></a>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="calcForm">
+    <h4>Розрахувати вартість:</h4>
+    <br/>
+    <div class="firstRowCalc">
+    <form name="fen2">
+        <label class="col-form-label">
+            Висота(м):
+            <input type="text" size="5" name="len" class="form-control" required/>
+        </label>
+    </form>
+    <form name="fen3">
+        <label class="col-form-label">
+            Ширина(м):
+            <input type="text" size="5" name="wid" class="form-control"required/>
+        </label>
+    </form>
+        <form name="countGates">
+            <label class="col-form-label">
+                Кількість стовпців:
+                <input type="number" min="1"  name="count" class="gatesCount form-control" required/>
+            </label>
+        </form>
+    </div>
+    <div>
+        <label>Виберіть тип огорожі:</label>
+    <div class="calcChooseFenceType">
+        <button onclick='fence_type = "FencingBlinds"' class="btn btn-primary"> Паркан-жалюзі</button>
+        <button onclick='fence_type = "MetalFence"' class="btn btn-primary"> Металевий штахетник</button>
+        <button onclick='fence_type = "RanchoFence"' class="btn btn-primary">Металевий паркан Ранчо</button>
+        <button onclick='fence_type = "WeldedGridFence"' class="btn btn-primary">Паркан зі зварної сітки</button>
+        <button onclick='fence_type = "TemporaryFencing"' class="btn btn-primary">Тимчасова огорожа з металу</button>
+    </div>
+    </div>
+    <form name="fen">
+        <label class="col-form-label">
+            Сума:
+        <input type="text" id="disp" value="0.00" size="5" onchange='' class="form-control calc_formControl"/>
+        </label>
+    </form>
+    <div class="calcBtns">
+        <button onclick="fence_function()" class="btn btn-outline-primary mainPageBtn">
+            Результат
+        </button>
+        <button onclick='some_variable = "initial string information";
+          some_other_variable = 56; disp.value = "0.00"' class="btn btn-outline-primary clearBtnStyle">
+            Очистити
+        </button>
+    </div>
+</div>
+<!---->
+<!---->
+<script>
+    let some_variable = "initial string information";
+    let some_other_variable = 56;
+    let length = 0;
+    let width = 0;
+    let gates = 0;
+    let total = 0;
+    let fence_type = "Chainlink";
+    let price = 0;
+
+    function fence_function() {
+        length = document.fen2.len.value;
+        width = document.fen3.wid.value;
+        gates = document.countGates.count.value;
+        let perimeter = 2 * length + 2 * width;
+        if (fence_type === "FencingBlinds") {
+            price = 77 * perimeter;
+        }
+        if (fence_type === "MetalFence") {
+            price = 87 * perimeter;
+        }
+        if (fence_type === "RanchoFence") {
+            price = 69 * perimeter;
+        }
+        if (fence_type === "WeldedGridFence") {
+            price = 62 * perimeter;
+        }
+        if (fence_type === "TemporaryFencing") {
+            price = 59 * perimeter;
+        }
+        price = 165 * gates + price;
+        // price = price * .09 + price;
+        disp.value = price;
+    }
+</script>
+<script src="../src/js/modules/fencingBlinds.js"></script>
+</body>
+
+</html>
